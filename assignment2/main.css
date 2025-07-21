@@ -1,0 +1,22 @@
+div {
+    padding: 2px 4px 6px 8px;
+    border: 2px solid black;
+    margin: 2px 4px 6px 8px;
+    display: inline-block;
+    width: 47%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#first-div {
+    height: 300px;
+    /* visibility: hidden; */
+}
+
+#last-div:hover {
+    color: blue;
+    text-decoration: underline;
+}
