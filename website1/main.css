@@ -25,10 +25,19 @@ body {
 
 .main-header {
     width: 100%;
+    display: inline-block;
     background: #2ddf5c;
     padding: 8px 16px;
 } 
 
+.main-nav {
+    display: inline-block;
+}
+
 .main-nav__item { 
+    display: inline-block;
+}
+
+.main-header-container {
     display: inline-block;
 }
