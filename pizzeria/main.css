@@ -1,0 +1,55 @@
+body {
+    font-family: Nata Sans;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(217, 101, 101);
+}
+
+.brand {
+    display: inline-block;
+    width: 49%;
+    font-size: 30px;
+}
+
+.brand a {
+    color: rgb(255, 255, 255);
+}
+
+.brand a:hover {
+    color: rgb(247, 183, 183);
+}
+
+.brand__container {
+    margin-left: 32px;
+}
+
+.links {
+    display: inline-block;
+    width: 49%;
+    font-size: 20px;
+}
+
+.header__items {
+    text-align: end;
+    margin: 0;
+    margin-right: 32px;
+    padding: 0;
+}
+
+.header__items li {
+    display: inline;
+}
+
+.header__items li a {
+    color: rgb(255, 255, 255);
+}
+
+.header__items li a:hover {
+    color: rgb(247, 183, 183);
+}
