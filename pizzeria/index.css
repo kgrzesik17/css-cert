@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+.background {
+    background: linear-gradient(rgba(255, 255, 14, 0.5) 20%, rgba(255, 6, 6, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLc_IGWl-3L_ALMcuiPL-nhiPqcWJEZE4rbQ&s") center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 80%;
+    filter: brightness(0.7) contrast(1.4)
+}
+
+.main-bar {
+    text-align: center;
+}
+
+.main-bar h1 {
+    font-size: 64px;
+    margin: 48px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.table-container {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-spacing: 4px;
+}
+
+th, td {
+    border: 1px solid rgb(112, 90, 90);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+th, td:hover {
+    background-color: rgb(246, 110, 110);
+}
+
+th {
+    background-color: rgb(255, 110, 110);
+    color: black;
+}
+
+td {
+    background-color: rgb(251, 39, 39);
+    color: white;
+    text-shadow: 0 0 1px black;
+}
