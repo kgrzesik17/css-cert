@@ -72,10 +72,11 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -134,8 +135,8 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    /* display: inline-block; */
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -199,4 +200,25 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-header__brand {
+        height: 1.8rem;
+    }
+
+    .main-nav {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
