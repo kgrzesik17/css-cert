@@ -42,18 +42,12 @@
   }
 }
 
-.plan__list {
-  width: 100%;
-  text-align: center;
-}
-
 .plan {
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
   margin: 0.5rem 0;
   width: 100%;
-  vertical-align: middle;
 }
 
 .plan--highlighted {
@@ -94,6 +88,29 @@
 
 .plan__feature {
   margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan__annotation {
+    font-size: 1.2rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 #key-features {
