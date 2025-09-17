@@ -202,7 +202,7 @@ body {
     display: block !important;
 }
 
-@media (min-width: 40rem) and (orientation: portrait) {
+@media (min-width: 40rem) {
     .toggle-button {
         display: none;
     }
