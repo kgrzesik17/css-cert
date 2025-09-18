@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     background: #2ddf5c;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     z-index: 1;
 }
 
@@ -59,7 +59,6 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
     height: 2.5rem;
     /* width: 20px; */
     display: inline-block;
