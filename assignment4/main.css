@@ -99,18 +99,19 @@
 
   /*assignment => flex container*/
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 25rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
 
    /*assignment => z-index & height*/
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 33rem;
     z-index: 10;
   }
 }
