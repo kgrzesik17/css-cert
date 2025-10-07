@@ -1,5 +1,5 @@
 main {
-    padding-top: 1.2rem;
+    padding-top: 1rem;
 }
 
 .signup-title {
@@ -39,7 +39,7 @@ main {
     font: inherit;
 }
 
-.signup-form input:focus:not([type="checkbox"]),
+.signup-form input:focus,
 .signup-form select:focus {
     outline: none;
     background: #d8f3df;
@@ -64,7 +64,7 @@ main {
 .signup-form input.invalid,
 .signup-form select.invalid,
 .signup-form :invalid {
-    border-color: red !important;  /* its temporary so !important is ok */
+    border-color: red !important;
     background: #faacac;
 }
 
