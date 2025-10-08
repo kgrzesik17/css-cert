@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            margin: 0;
+            height: 100%;
+            grid-template-rows: 4rem auto auto 4rem;
+        }
+
+        header {
+            background-color: gray;
+            color: white;
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+            align-items: center;
+        }
+
+
+        nav {
+            display: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer p {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .card {
+            background-color: gray;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            border: 2px solid black;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 22rem;
+        }
+
+        .card__highlighted {
+            background-color: gold;
+        }
+
+        @media (min-width:1025px) {  /* tablets+ */
+            body {
+                grid-template-areas: "header header header"
+                                     "side main ."
+                                     "footer footer footer";
+
+                grid-template-rows: 4rem auto 4rem;
+                grid-template-columns: 15% 1fr 15%;
+                gap: 4rem 0;
+            }
+
+            header {
+                grid-area: header;
+            }
+
+            aside {
+                grid-area: side;
+            }
+
+            main {
+                grid-area: main;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+
+            header .burger {
+                display: none;
+            }
+
+            header ul {
+                list-style: none;
+            }
+
+            header ul li {
+                display: inline;
+                margin: 0 1rem;
+            }
+
+            header ul li a {
+                text-decoration: none;
+                color:aquamarine;
+            }
+
+            header nav {
+                display: block;
+                order: 1;
+            }
+
+            .flexbox-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .card {
+                margin: 0 0.5rem;
+                width: 16rem;
+            }
+
+            .card__highlighted {
+                height: 25rem;
+                z-index: 10;
+                order: 1;
+            }
+
+            #free {
+                order: 0;
+            }
+
+            #basic {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <div class="burger">
+            <p>=</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Strona główna</li>
+                <li>Kontakt</li>
+                <li><a href="https://github.com/kgrzesik17">Github</a></li>
+            </ul>
+        </nav>
+
+        <div class="brand">
+            <p>Firma</p>
+        </div>        
+    </header>
+
+    <main>
+        <h1>Flexbox and grid example!</h1>
+        
+        <div class="flexbox-container">
+            <div class="card card__highlighted">
+                <h2 class="card__title">PREMIUM</h2>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus, officiis suscipit cumque quis blanditiis. Obcaecati tenetur et, qui atque sint ab perferendis modi consequuntur.</p>
+                <p class="card__price">100 PLN</p>
+            </div>
+            <div class="card"  id="basic">
+                <h2 class="card__title">BASIC</h2>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto consequuntur, animi facere aliquid alias.</p>
+                <p class="card__price">50 PLN</p>
+            </div>
+            <div class="card" id="free">
+                <h2 class="card__title">FREE</h2>
+                <p class="card__description">Lorem ipsum dolor sit amet.</p>
+                <p class="card__price">0 PLN</p>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <ul>
+            <li>Aktualności</li>
+            <li>O flexboxie</li>
+            <li>O gridzie</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Made by kgrzesik17</p>
+    </footer>
+</body>
+</html>
