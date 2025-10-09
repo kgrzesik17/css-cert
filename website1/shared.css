@@ -177,7 +177,8 @@ main {
 }
 
 .mobile-nav {
-  display: none;
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.25, 1, 0.5, 1);
   position: fixed;
   z-index: 101;
   top: 0;
