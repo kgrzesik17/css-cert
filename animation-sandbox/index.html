@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            animation: attack 1.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        @keyframes attack {
+            0% {
+                transform: translateY(10rem);
+                opacity: 0;
+            }
+
+            10% {
+                transform: translateY(0rem);
+                opacity: 1;
+            }
+            40% {
+                transform: rotateZ(-10deg);
+            }
+            80% {
+                transform: rotateZ(30deg);
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(10rem) rotateZ(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <img src="6899903.png" alt="">
+    </div>
+</body>
+</html>
